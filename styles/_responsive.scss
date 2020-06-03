@@ -1,0 +1,43 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position: 100vh;
+
+        .content {
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+}
+@media (max-width: 545px) {
+    #page-home header a {
+        bottom: 20px;
+    }
+    #page-home main h1 {
+        font-size: 50px;
+    }
+    #page-home main p, #page-home main a {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1650px) {
+    #page-home {
+        background-position: 110vh 20vh;
+    }
+}
+@media (max-height: 620px) {
+    #page-home {
+        background-position: 130vh 10vh;
+    }
+}
