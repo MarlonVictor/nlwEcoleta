@@ -1,7 +1,6 @@
 #page-home {
     height: 100vh;
     background: url(../assets/home-background.svg) no-repeat;
-    //background-position: 75vh 18vh;
     background-position: 80vh 20vh;
 
     .content {
@@ -32,6 +31,9 @@
         height: 20px;
         background-image: url(../assets/log-in.svg);
     }
+    &:hover span{
+        margin-right: 12px;
+    }
 } 
 
 #page-home main {
@@ -50,8 +52,7 @@
         line-height: 38px;
     }
     a {
-        display: flex;
-        align-items: center;
+        @extend .flexA;
         margin-top: 40px;
         width: 100%;
         max-width: 360px;
@@ -69,8 +70,7 @@
             text-align: center;
         }
         span {
-            display: flex;
-            align-items: center;
+            @extend .flexA;
             justify-content: center;
             width: 65px;
             height: 65px;

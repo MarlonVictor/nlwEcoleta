@@ -1,6 +1,12 @@
 $title-color: #322153;
 $primary-color: #34cb79;
+$bg: #f0f0f5;
 
+.flexA {
+    display: flex;
+    align-items: center;
+}
+ 
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +15,19 @@ $primary-color: #34cb79;
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: #f0f0f5;
+    background-color: $bg;
     -webkit-font-smoothing: antialiased;
+
+    &.bg::after {
+        content: '';
+        position: fixed;
+        background-color: #fff;
+        top: 250px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 }
 
 a {
@@ -20,4 +37,10 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: Ubuntu, sans-serif;
     color: $title-color;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }

@@ -1,3 +1,4 @@
+// Max
 @media (max-width: 900px) {
     #page-home {
         background-position: 100vh;
@@ -7,17 +8,38 @@
             text-align: center;
         }
     }
-    
     #page-home header a {
         position: absolute;
-        bottom: 48px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
     #page-home main {
         align-items: center;
     }
+    /**/
+    #page-create-point form {
+        width: 100%;
+        padding: 20px;
+        margin: 50px auto; 
+
+        h1 {
+            text-align: center;
+        }
+        button {
+            right: 20px;
+        }
+    }
+    /**/
+    #page-search-results main .cards {
+        grid-template-columns: 1fr;
+
+        img {
+            height: 250px;
+        }
+    }
 }
+
 @media (max-width: 545px) {
     #page-home header a {
         bottom: 20px;
@@ -29,15 +51,69 @@
         margin-top: 30px;
         font-size: 20px;
     }
+    /**/
+    #modal input, #modal select, #modal button {
+        max-width: 300px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /**/
+    #page-create-point form {
+        height: 1580px;
+
+        .field {
+            margin-left: 0;
+        }
+        .field-group {
+            flex-direction: column;
+        }
+        button {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+
+        li {
+            padding: 32px 20px 16px;
+        }
+    }
+    /**/
+    #page-search-results header, #page-create-point header {
+        flex-direction: column;
+        a{
+            margin-top: 20px;
+        }
+    }
+    #page-search-results main .cards img {
+        height: 150px;
+    }
 }
 
+
+// Min
 @media (min-width: 1650px) {
     #page-home {
         background-position: 110vh 20vh;
     }
 }
+
+
+// Height
 @media (max-height: 620px) {
     #page-home {
         background-position: 130vh 10vh;
+        height: 110vh;
+
+        header a {
+            top: 90px;
+            width: 250px;
+        }
+        main {
+            margin-top: 70px;
+        }
     }
 }
