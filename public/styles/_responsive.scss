@@ -60,13 +60,20 @@
     }
     /**/
     #page-create-point form {
-        height: 1580px;
+        height: 1670px;
 
+        legend span {
+            display: none;
+        }
         .field {
             margin-left: 0;
         }
         .field-group {
             flex-direction: column;
+        }
+        .field-group-grid {
+            grid-template-columns: 1fr;
+            gap: 0;
         }
         button {
             left: 50%;
