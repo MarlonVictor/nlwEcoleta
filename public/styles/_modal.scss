@@ -73,3 +73,20 @@
         }
     }
 }
+
+#modal.saved .content, #modal.error .content {
+    @extend .flexA;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 20px;
+        color: #fff;
+    }
+    .img {
+        @extend .flexA;
+        justify-content: center;
+        background-color: red;
+        width: 80px;
+        height: 40px;
+    }
+}

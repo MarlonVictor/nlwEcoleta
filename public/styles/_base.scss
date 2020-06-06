@@ -18,14 +18,18 @@ body {
     background-color: $bg;
     -webkit-font-smoothing: antialiased;
 
+    &.bg {
+        background-color: #fff;
+    }
     &.bg::after {
         content: '';
-        position: fixed;
-        background-color: #fff;
-        top: 250px;
+        position: absolute;
+        top: 0;
         right: 0;
         left: 0;
         bottom: 0;
+        height: 16rem;
+        background-color: $bg;
         z-index: -1;
     }
 }
@@ -43,4 +47,16 @@ select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $bg;
 }

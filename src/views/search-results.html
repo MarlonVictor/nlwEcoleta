@@ -1,44 +1,47 @@
 {% extends 'layout.html' %}
 
+<!---->
+
 {% set pageId = 'page-search-results' %}
 
+<!---->
+
 {% block title %}
-<title>Resultado da pesquisa</title>
+    <title>Resultado da pesquisa</title>
 {% endblock title %}
+
+<!---->
 
 {% block content %}
     <body class="bg">
         {% include 'partials/header.html' %}
 
         <main>
-            <h4>
-                <strong>2 pontos</strong> encontrados
-            </h4>
 
-            <div class="cards">
-                <div class="card">
-                    <img src="https://images.pexels.com/photos/802221/pexels-photo-802221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Colectoria">
-                    <h1>Colectoria</h1>
-                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                    <p>
-                        Rio do Sul, Santa Catarina<br>
-                        Guilherme Gemballa, Jardim Améric <br>
-                        Número 260
-                    </p>
+            {% if total > 0 %}
+                <h4>
+                    <strong>{{total}} pontos</strong> encontrados
+                </h4>
+                <div class="cards">
+                    {% for place in places %}
+                        <div class="card">
+                            <img src="{{ place.image }}"
+                                alt="{{ place.name }}">
+                            <h1>{{ place.name }}</h1>
+                            <h3>{{ place.items }}</h3>
+                            <p>
+                                {{ place.city }}, {{ place.state }}<br>
+                                {{ place.address }} <br>
+                                {{ place.address2 }}
+                            </p>
+                        </div>
+                    {% endfor %}
                 </div>
-                <div class="card">
-                    <img src="https://images.pexels.com/photos/167538/pexels-photo-167538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Colectoria">
-                    <h1>Papersider</h1>
-                    <h3>Papéis de Papelão</h3>
-                    <p>
-                        Rio do Sul, Santa Catarina<br>
-                        Guilherme Gemballa, Jardim Améric <br>
-                        Número 260
-                    </p>
-                </div>
-            </div>
+
+                {% else %}
+                    <h4><strong>Nenhum</strong> local encontrado</h4>
+            {% endif %}
+            
         </main>
     </body>
 {% endblock content %}
