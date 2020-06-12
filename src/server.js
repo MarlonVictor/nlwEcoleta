@@ -89,9 +89,8 @@ server.post('/savepoint', (req, res) => {
 server.get('/search', (req, res) => {
     const search = req.query.search
 
-    if(search == '') { //pesquisa vazia
+    if(search == '') //pesquisa vazia
         return res.render('search-results.html', {total: 0})
-    }
 
     // pegando os dados do db
     db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(error, rows) {
