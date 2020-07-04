@@ -20,8 +20,7 @@ Essa aplicação foi construída na trilha Starter da Next Level Week distribuí
 ### Layout da Home :
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62356988/84293981-e6563780-ab1e-11ea-96f3-d550688eaccb.jpg" width="681px">
-  <img src="https://user-images.githubusercontent.com/62356988/84504477-6650de80-ac92-11ea-9a50-be6c395eef12.jpg" width="183px">
+  <img src="https://user-images.githubusercontent.com/62356988/86515241-fbf11100-bded-11ea-9efa-cd6ccc0efd70.jpg" width="860px">
 </p>
   
 ### Desafio do erro no cadastro concluido :
