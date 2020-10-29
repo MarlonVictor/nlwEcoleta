@@ -1,15 +1,10 @@
 <p align="center">
-<<<<<<< HEAD
     <img src="https://user-images.githubusercontent.com/62356988/84291662-cbce8f00-ab1b-11ea-9fd4-07889511e582.png">
 </p>
-
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/MarlonVictor/nlwEcoleta?color=%2334cb79&logo=GitHub&style=flat-square">
   <img src="https://img.shields.io/github/stars/MarlonVictor/nlwEcoleta?color=%2334cb79&logo=github&style=flat-square">
   <img src="https://img.shields.io/github/license/MarlonVictor/nlwEcoleta?color=%2334cb79&style=flat-square">
-=======
-  <img src="https://user-images.githubusercontent.com/62356988/84291662-cbce8f00-ab1b-11ea-9fd4-07889511e582.png">
->>>>>>> e8094ddd035d03967a2338995dce6fa85dcef4e1
 </p>
   
 ## Sobre
@@ -64,8 +59,4 @@ As aulas foram ministradas pelo mestre [Mayk Brito](https://www.gitshowcase.com/
 ___
 <p align="center">
   Feito com <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f49c.png" width="20px"> by Marlon Victor
-<<<<<<< HEAD
 </p>
-=======
-</p>
->>>>>>> e8094ddd035d03967a2338995dce6fa85dcef4e1
